@@ -1,0 +1,17 @@
+{
+    "name": "discord-alt-detection",
+    "version": "1.0.0",
+    "description": "really kinda shit bot",
+    "author": "Jordan.#2139",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "discord.js": "^12.5.3",
+        "fs": "0.0.1-security",
+        "moment": "^2.29.1",
+        "stack": "^0.1.0"
+    }
+}
