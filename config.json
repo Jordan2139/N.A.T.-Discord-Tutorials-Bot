@@ -1,11 +1,11 @@
 {
     "main_config": {
-        "token": "NzE5NzU5MDgyMTQ3MjgyOTQ0.Xt8F4Q.2GDvdi9WL06BE0j073_-0LjLwjc",
+        "token": "",
         "main_color": "#6908CA",
         "footer": "I am a really shitty bot made by Jordan.#2139"
     },
     "altprev": {
         "age": "30",
-        "logchannel": "860775592231305246"
+        "logchannel": ""
     }
 }
