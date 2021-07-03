@@ -26,5 +26,33 @@ module.exports = async(client, discord, config, guildMember) => {
             guildMember.send(caughtpt2)
         } catch (e) {}
         guildMember.kick(`Alt account detected (Account age: ${moment(guildMember.user.createdAt)}) - ${client.user.tag}`);
+
+        if(config["NewUser"].enabled) {
+            if(config["NewUser"].SendMsg) {
+                if (!config["NewUser"].WelcomeChannel) {
+                    console.log('Oi M8! You need to set a welcome channel in the config.json!') 
+                    return;
+                } else {
+                    const WelcomeEmbed = new discord.MessageEmbed()
+                    .setColor(`${config['main_config'].colorhex}`)
+                    .setFooter(`${config['main_config'].footer}`)
+                    .setTimestamp()
+                    .setTitle(`Welcome ${guildMember.user.tag}!`)
+                    .setThumbnail(`${guildMember.user.displayAvatarURL(true)}`)
+                    .setDescription(`Hey there! Welcome to this amazing server! Please make sure to follow the rules as well as Discord ToS!`)
+                    config["NewUser"].WelcomeChannel.send(WelcomeEmbed)
+                }
+                if(config["NewUser"].DMUser) {
+                    const DMEmbed = new discord.MessageEmbed()
+                    .setColor(`${config['main_config'].colorhex}`)
+                    .setFooter(`${config['main_config'].footer}`)
+                    .setTimestamp()
+                    .setTitle(`Welcome ${guildMember.user.tag}!`)
+                    .setThumbnail(`${guildMember.user.displayAvatarURL(true)}`)
+                    .setDescription(`Hey there! Welcome to this amazing server! Please make sure to follow the rules as well as Discord ToS!`)
+                    guildMember.send(DMEmbed)
+                }
+            }
+        }
     } catch (e) {}
 }

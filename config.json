@@ -2,10 +2,17 @@
     "main_config": {
         "token": "",
         "main_color": "#6908CA",
-        "footer": "I am a really shitty bot made by Jordan.#2139"
+        "footer": "I am a really shitty bot made by Jordan.#2139",
+        "prefix": "."
     },
     "altprev": {
         "age": "30",
         "logchannel": ""
+    },
+    "NewUser": {
+        "enabled": true,
+        "SendMsg": true,
+        "WelcomeChannel": "Shitty channel id",
+        "DMUser": true 
     }
 }
