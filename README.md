@@ -7,4 +7,4 @@ This is a super simple discord alt prevention bot that has great possibility to 
 ![](https://i.imgur.com/NCucnyL.png)
 
 ## Watch Me Code It
-https://youtu.be/3F7V6RqWuP8
+[![](https://img.youtube.com/vi/3F7V6RqWuP8/0.jpg)](http://www.youtube.com/watch?v=3F7V6RqWuP8)
