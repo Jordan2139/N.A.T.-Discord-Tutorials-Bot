@@ -3,7 +3,8 @@
         "token": "",
         "main_color": "#6908CA",
         "footer": "I am a really shitty bot made by Jordan.#2139",
-        "prefix": "."
+        "prefix": ".",
+        "debug": false
     },
     "altprev": {
         "age": "30",
